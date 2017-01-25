@@ -1,59 +1,12 @@
 <!DOCTYPE html>
 <html>
 <HEAD>
-<link rel="stylesheet" type="text/css" href="style/STYLE.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
 <link rel="stylesheet" type="text/css" href="images/App_Themes/Aqua/Web/stylesx.css" />
 <link rel="stylesheet" type="text/css" href="images/App_Themes/HatchedGray/Web/stylesx.css" />
 
 </HEAD>
-<script type="text/javascript"> 
-		function windowwidth() {
-		  if (navigator.userAgent.indexOf("MSIE") > 0) w=document.body.clientWidth;
-		  else w=window.outerWidth;
-		  return w;
-		}
-		function windowheight() {
-		  if (navigator.userAgent.indexOf("MSIE") > 0) h=document.body.clientHeight;
-		  else h= window.outerHeight;
-		  return h;
-		}
-		var DHTML = (document.getElementById || document.all || document.layers);
-		if (DHTML) {
-		  var obj=document.getElementById("waitDiv");
-		  obj.style.left=(windowwidth()-waitIMG.width)/2;
-		  obj.style.top=(windowheight()-waitIMG.height)/2;
-		}
-		function ap_getObj(name) { 
-		  if (document.getElementById) { 
-			return document.getElementById(name).style; 
-		  } else if (document.all) { 
-			return document.all[name].style; 
-		  } else if (document.layers) { 
-			return document.layers[name]; 
-		  } 
-		} 
-		function ap_showWaitMessage(div, flag) { 
-		  if (!DHTML) return; 
-		  var x = ap_getObj(div); x.visibility = (flag) ? 'visible':'hidden'
-		} 
 
-		ap_showWaitMessage('waitDiv', 1); //แสดงในครั้งแรก
-</script>		<script type="text/javascript">
-
-			function chk_lang(langid,xpage){
-					var i_lang=langid; 
-					var x = xpage;
-						
-						if (x!="enrollpointx.asp")
-						{
-													
-						
-						document.cookie = "CKLANG=" +i_lang+ ";";
-						document.FRM_LANG.submit();
-						}
-
-					}   
-		</script>
 <body>
 
 <h2>วิชาที่ลงทะแบียน</h2>
