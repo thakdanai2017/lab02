@@ -331,36 +331,6 @@ html {
     }
 }
 
-body,
-h1,
-h2 {
-    font-family: "Raleway", sans-serif
-}
-
-body,
-html {
-    height: 100%
-}
-
-p {
-    line-height: 2
-}
-
-.bgimg,
-.bgimg2 {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-.bgimg {
-    background-image: url("http://fedesoft.org/wp-content/uploads/2015/07/banner31.jpg")
-}
-
-.bgimg2 {
-    background-image: url("http://www.straighterline.com/wp/wp-content/uploads/2015/07/blog_feature_IT_Careers_072015.jpg")
-}
-
 ul {
     list-style-type: none;
     margin: 0;
