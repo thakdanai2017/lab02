@@ -3,187 +3,269 @@ table {
     width: 100%;
     text-align: center;
 }
-tr td{
+
+tr td {
     align: center;
     padding: 8px;
-     background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50;
+    color: red;
+    font: black;
 }
 
-th, td {
+td {
+    background-color: white;
+}
+
+th,
+td {
     align: center;
     padding: 8px;
 }
-td{
+
+td {
     text-align: center;
 }
-tr:nth-child(even){background-color: #f2f2f2}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
 
 th {
     background-color: #4CAF50;
     color: white;
 }
+
 .flexbin {
-  display: flex;
-  overflow: hidden;
-  flex-wrap: wrap;
-  margin: -2.5px; }
-  .flexbin:after {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: -2.5px;
+}
+
+.flexbin:after {
     content: '';
     flex-grow: 999999999;
     min-width: 300px;
-    height: 0; }
-  .flexbin > * {
+    height: 0;
+}
+
+.flexbin>* {
     position: relative;
     display: block;
     height: 300px;
     margin: 2.5px;
-    flex-grow: 1; }
-    .flexbin > * > img {
-      height: 300px;
-      object-fit: cover;
-      max-width: 100%;
-      min-width: 100%;
-      vertical-align: bottom; }
-  .flexbin.flexbin-margin {
-    margin: 2.5px; }
-  @media (max-width: 980px) {
+    flex-grow: 1;
+}
+
+.flexbin>*>img {
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: bottom;
+}
+
+.flexbin.flexbin-margin {
+    margin: 2.5px;
+}
+
+@media (max-width: 980px) {
     .flexbin {
-      display: flex;
-      overflow: hidden;
-      flex-wrap: wrap;
-      margin: -2.5px; }
-      .flexbin:after {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin: -2.5px;
+    }
+    .flexbin:after {
         content: '';
         flex-grow: 999999999;
         min-width: 150px;
-        height: 0; }
-      .flexbin > * {
+        height: 0;
+    }
+    .flexbin>* {
         position: relative;
         display: block;
         height: 150px;
         margin: 2.5px;
-        flex-grow: 1; }
-        .flexbin > * > img {
-          height: 150px;
-          object-fit: cover;
-          max-width: 100%;
-          min-width: 100%;
-          vertical-align: bottom; }
-      .flexbin.flexbin-margin {
-        margin: 2.5px; } }
-  @media (max-width: 400px) {
+        flex-grow: 1;
+    }
+    .flexbin>*>img {
+        height: 150px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom;
+    }
+    .flexbin.flexbin-margin {
+        margin: 2.5px;
+    }
+}
+
+@media (max-width: 400px) {
     .flexbin {
-      display: flex;
-      overflow: hidden;
-      flex-wrap: wrap;
-      margin: -2.5px; }
-      .flexbin:after {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin: -2.5px;
+    }
+    .flexbin:after {
         content: '';
         flex-grow: 999999999;
         min-width: 100px;
-        height: 0; }
-      .flexbin > * {
+        height: 0;
+    }
+    .flexbin>* {
         position: relative;
         display: block;
         height: 100px;
         margin: 2.5px;
-        flex-grow: 1; }
-        .flexbin > * > img {
-          height: 100px;
-          object-fit: cover;
-          max-width: 100%;
-          min-width: 100%;
-          vertical-align: bottom; }
-      .flexbin.flexbin-margin {
-        margin: 2.5px; } }
-        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
+        flex-grow: 1;
+    }
+    .flexbin>*>img {
+        height: 100px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom;
+    }
+    .flexbin.flexbin-margin {
+        margin: 2.5px;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body,
+html {
     height: 100%;
     color: #777;
     line-height: 1.8;
 }
 
+
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 /* First image (Logo. Full height) */
+
 .bgimg-1 {
     background-image: url('/w3images/parallax1.jpg');
     min-height: 100%;
 }
 
+
 /* Second image (Portfolio) */
+
 .bgimg-2 {
     background-image: url("/w3images/parallax2.jpg");
     min-height: 400px;
 }
 
+
 /* Third image (Contact) */
+
 .bgimg-3 {
     background-image: url("/w3images/parallax3.jpg");
     min-height: 400px;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
 
 /* Turn off parallax scrolling for tablets and phones */
+
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
         background-attachment: scroll;
     }
 }
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif
+}
 
 {
     box-sizing: border-box;
 }
+
 .row::after {
     content: "";
     clear: both;
     display: block;
 }
+
 [class*="col-"] {
     float: left;
     padding: 15px;
 }
+
 html {
     font-family: "Lucida Sans", sans-serif;
 }
+
 .header {
     background-color: #9933cc;
     color: #ffffff;
     padding: 15px;
 }
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 .menu li {
     padding: 8px;
     margin-bottom: 7px;
     background-color: #33b5e5;
     color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 .menu li:hover {
     background-color: #0099cc;
 }
+
 .aside {
     background-color: #33b5e5;
     padding: 15px;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 .footer {
     background-color: #0099cc;
     color: #ffffff;
@@ -191,19 +273,57 @@ html {
     font-size: 12px;
     padding: 15px;
 }
+
+
 /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
